@@ -1,3 +1,10 @@
-from rest_framework.serializers import Serializer
+from rest_framework import serializers
+from .models import Author
 
-class 
+class AuthorSerialiser(serializers.ModelSerializer):
+    class Meta:
+        model = Author
+        fields = ['phone','user']
+
+
+ 
